@@ -6,3 +6,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('HomeApp.urls')),
 ]
+
+
+

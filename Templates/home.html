@@ -8,5 +8,9 @@
 </head>
 <body>
    <h1>Home Page Running...</h1>
+   
+   {% for item in Students %}
+      <h1>{{item.name}} : {{item.place}} : {{item.age}}</h1> <br>
+   {% endfor %}
 </body>
 </html>

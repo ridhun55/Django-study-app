@@ -1,8 +1,16 @@
 from django.shortcuts import render
+from . import models
 
 def HomeView(request):
+   data = models.StudentRegister.objects.all()
    
-   return render(request,'home.html',{})
+   
+   
+   html = 'home.html'
+   context = {
+      'Students':data,
+      }
+   return render(request,html,context)
 
 
 
