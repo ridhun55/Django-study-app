@@ -6,7 +6,7 @@ def HomeView(request):
    
    
    
-   html = 'home.html'
+   html = 'index.html'
    context = {
       'Students':data,
       }
